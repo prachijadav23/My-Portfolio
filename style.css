@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Quicksand:wght@300..700&family=Smooch+Sans:wght@100..900&display=swap');
+*{
+    font-family: "Montserrat", serif;
+}
+.body{
+    background-color: gainsboro;
+    
+}
+.header{
+    display: flex;
+    flex-direction: row; 
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+   
+
+}
+.heading{
+    font-style: italic;
+    cursor: pointer;
+}
+.nav{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    
+   
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    &:hover{
+        color: blue;
+        
+    }
+} 
+
+li:hover{
+    cursor: pointer;
+}
+.name{
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb();
+}
+.name img{
+    height: 500px;
+    width: auto;    
+}
+.name-section button{
+    border-radius: 20px;
+    background-color:orange;
+    color:black;
+    border: 1px solid black;
+    cursor: pointer;
+    height: 40px;
+    font-weight: bolder;
+    padding: 5px;
+    
+    
+}
+.name-section button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 5px orange;
+}
+
+.contact{
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    padding: 100px;
+    
+}
+.contact-right{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.social:nth-child(5){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.social:nth-child(6){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    button{
+        border-radius: 30px;
+        border: 1px dashed black;
+        color: black;
+        background-color: orange;
+        height: 30px;
+        font-weight: bolder;
+    }
+    button:hover{
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+    }
+  
+}
+
+.social-btn{
+ 
+   height: 20px;
+   width: 100px;
+   
+}
+
+
+
+
+
+.footer{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    
+
+}
+
+.footer-section icons{
+    display: flex;
+    flex-direction: column;
+   
+}
+.footer-section a{
+    color: black;
+    &:hover{
+        color: blue;
+    }
+}
+
+.resume{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: gainsboro;
+    padding: 20px;
+}
+table,td{
+    border: 1px solid transparent;
+    border-collapse: collapse;
+    padding: 20px;
+    /* background-color: gainsboro; */
+}
+.resume-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.edu{
+    margin: 10px;
+    padding: 20px;
+}
+.resume a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    &:hover{
+        color: blue;
+    }
+}
+.edu:hover{
+    box-shadow: 0px 0px 5px;
+    transition: transform 2s ease-in-out;
+    background-color: white;
+    transform: scale(1.2);
+}
+.project-card{
+  
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 20px;
+    grid-template-columns: auto auto;
+    padding: 30px;
+  
+    .project-name{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        height: 350px;
+        width: 300px;
+        margin: 30px;
+        padding: 10px;
+        &:hover {
+            box-shadow: 0px 0px 10px black;
+            
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            font-style: italic;
+            &:hover{
+                color:red;
+                cursor: pointer;
+            }
+        }
+      
+    }
+
+    .project-img{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        height: 300px;
+        width: 300px;
+       &:hover{
+        box-shadow: 0px 0px 30px black;
+        transition: transform 1s ease-in-out;
+        transform: scale(1.2);
+       }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+}
+.projects{
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+      
+}
